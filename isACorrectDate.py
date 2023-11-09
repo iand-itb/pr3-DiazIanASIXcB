@@ -2,7 +2,7 @@
 Ian Diaz
 8/11/23
 ASIXc M03 UF1 A3
-Descripció: Comprovar si la data es correcte.
+Descripció: Comprovar si la data és correcte.
 '''
 
 try:
@@ -18,7 +18,7 @@ try:
                 if mes == 2 and dia > 28 and not any % 4 == 0:
                     print("Data incorrecte.")
                     exit()
-                if mes == 2 and any % 4 == 0 and dia >29:
+                if mes == 2 and any % 4 == 0 and dia > 29:
                     print("Data incorrecte.")
                     exit()
                 if mes in [4,6,9,11] and dia > 30:
