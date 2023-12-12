@@ -8,7 +8,6 @@ try:
 
     hab = input("Introdueix la lletra identificativa del teu tipus d'habitatge: ").upper()
     gastat = float(input("Introdueix el número de m\u00B3 d'aigua gastats: "))
-    quotaFixa = None
     match hab:
         case "A": quotaFixa = 2.46
         case "B": quotaFixa = 6.40
@@ -37,7 +36,7 @@ try:
         print("Introdueix un número vàlid de m\u00B3 d'aigua gastats")
         exit()
 
-    print(f"El preu de la teva factura de l'aigua és: {preu:.2f}€")
+    print(f"\nEl preu de la teva factura de l'aigua és: {preu:.2f}€")
     #print("El preu de la teva factura de l'aigua és: " + str(round(preu, 2)) + "€")
 except ValueError:
     print("Introdueix valors vàlids.")
